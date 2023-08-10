@@ -10,17 +10,18 @@
         <div class ="mb-3">
             <label for ="searchMovie" class ="form-label">
                 Search for Movie:
-            </label>
-            <input type="text" class="form-control" name="searchMovie"/>
-            </div>
-            <button type ="submit" class ="btn btn-primary">Search</button>
-        </form>
-    <!--<p>Searching for {{searchTerm}}</p>
-    <div class = "row row-cols-1 row-cols-md-3 g-4"></div>
+        </label>
+        <input type="text" class="form-control" name="searchMovie"/>
+        </div>
+        <button type ="submit" class ="btn btn-primary">Search</button>
+    </form>
+    <p>Searching for {{searchTerm}}</p>
+    <div class = "row row-cols-1 row-cols-md-3 g-4">
     {% for movie in movies %}
     <div v-for="movie in movies" class="col">
+        </head>
         <div class="card">
-            <img class="card-img-top" src="{{movie.image.url}}"/>
+            <img class="card-img-top" src="{{movie.image.url}}" style="float:;width:256px;height:256px;"/>
             <div class="card-body">
                 <h5 class="card-title fw-bold"> {{movie.title}}</h5>
                 <p class="card-text"> {{movie.description}}</p>
@@ -36,6 +37,6 @@
     {% endfor %}
 </div>
 <br/>
-    <br/>-->
-    Searching for {{searchTerm}}
+    <br/>
+    <!--Searching for {{searchTerm}}-->
 </div>
