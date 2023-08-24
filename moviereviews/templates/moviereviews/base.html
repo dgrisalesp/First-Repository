@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="{%url 'home'%}">Movies
+          <img src="/static/images/movies.jpg" alt="Movies Logo" class="d-inline-block align-text-middle" style="height: 50px; width: auto;">
+      </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon">
+              
+            </span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link" href="{%url 'news'%}">News</a>
+                <a class="nav-link" href="#">Log in</a>
+                <a class="nav-link" href="#">Sign up</a>
+                <a class="nav-link" href="{%url 'home'%}">Home</a>
+          </div>
+        </div>
+      </nav>
+      <div class="container">
+        {%block content%}
+        {%endblock content%}
+      </div>
+</body>
+</html>
